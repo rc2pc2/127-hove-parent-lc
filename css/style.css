@@ -1,0 +1,38 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    padding: 3rem;
+}
+
+.flex-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.parent{
+    height: 400px;
+    width: 100%;
+    background-color: #0d99ff;
+}
+
+div.descendant{
+    /* height: 150px; */
+    /* width: 400px; */
+    background-color: #f24822;
+    padding: 2rem;
+}
+
+div.parent:hover{
+    border: rgba(255,0,0,.2) 2rem dotted;
+}
+
+div.parent:hover div.descendant{
+    background-color: yellow;
+}
